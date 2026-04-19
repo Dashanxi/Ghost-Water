@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 222 89% 55%;
+  --accent: 280 80% 60%;
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --critical: 0 84% 60%;
+
+  --background: 210 20% 98%;
+  --foreground: 222 47% 11%;
+  --muted-foreground: 215 20% 50%;
+  --border: 220 13% 91%;
+  --popover: 0 0% 100%;
+}
+
+body {
+  @apply bg-[#f6f8fb] text-gray-800;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 20px;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid hsl(var(--border));
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
